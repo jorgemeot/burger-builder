@@ -11,7 +11,6 @@ module.exports = {
   extends: ['standard', 'prettier'],
   plugins: ['react'],
   rules: {
-    indent: ['error', 2, { SwitchCase: 1 }],
     'space-before-function-paren': 'error',
     'arrow-body-style': ['error', 'as-needed'],
     'import/prefer-default-export': 'error',

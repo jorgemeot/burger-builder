@@ -30,7 +30,7 @@ const NavigationItem = styled.li`
       padding: 16px 10px;
       background-color: ${(props) => (props.active ? '#8F5C2C;' : null)};
       border-bottom: ${(props) =>
-    props.active ? '4px solid #40A4C8;' : '4px solid transparent;'};
+        props.active ? '4px solid #40A4C8;' : '4px solid transparent;'};
     }
     & a:hover,
     & a:active {

@@ -10,8 +10,8 @@ const Button = styled.button`
     props.buttonSuccess
       ? '#5C9210;'
       : props.buttonDanger
-        ? '#944317;'
-        : '#FFF;'};
+      ? '#944317;'
+      : '#FFF;'};
   outline: none;
   font: inherit;
   cursor: pointer;
