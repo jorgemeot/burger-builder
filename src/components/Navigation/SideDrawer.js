@@ -19,7 +19,7 @@ const SideDrawer = styled.div`
   background-color: #fff;
   transition: transform 0.3s ease-out;
   transform: ${(props) =>
-    props.show ? 'translateX(0);' : 'translateX(-100%);'};
+    props.open ? 'translateX(0);' : 'translateX(-100%);'};
   @media (min-width: 500px) {
     display: none;
   }
@@ -33,7 +33,7 @@ const LogoWrapper = styled.div`
 const sideDrawer = (props) => (
   <Auxiliary>
     <Backdrop show={props.open} clicked={props.closed} />
-    <SideDrawer show={props.open}>
+    <SideDrawer {...props}>
       <LogoWrapper>
         <Logo />
       </LogoWrapper>

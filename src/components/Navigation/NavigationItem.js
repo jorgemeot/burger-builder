@@ -42,7 +42,7 @@ const NavigationItem = styled.li`
 `
 
 const navigationItem = (props) => (
-  <NavigationItem active={props.active}>
+  <NavigationItem {...props}>
     <a href={props.link}>{props.children}</a>
   </NavigationItem>
 )
