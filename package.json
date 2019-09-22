@@ -1,0 +1,45 @@
+{
+  "name": "burger-builder",
+  "version": "0.1.0",
+  "description": "Burger builder",
+  "author": "Jorge Méndez Otero",
+  "license": "MIT",
+  "homepage": "https://github.com/jorgemeot/burger-builder/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgemeot/burger-builder"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production && cp index.html favicon.ico dist/",
+    "lint": "eslint ./**/*.js",
+    "format": "prettier ./**/*.js --write && eslint ./**/*.js --fix"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "file-loader": "^4.2.0",
+    "prettier": "^1.18.2",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
