@@ -1,6 +1,6 @@
 module.exports = {
   entry: './src/index.js',
-  devServer: { contentBase: './' },
+  devServer: { contentBase: './public' },
   module: {
     rules: [
       {

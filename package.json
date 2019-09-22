@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production && cp index.html favicon.ico dist/",
+    "build": "webpack --mode production && cp ./public/* ./dist/",
     "lint": "eslint ./**/*.js",
     "format": "prettier ./**/*.js --write && eslint ./**/*.js --fix"
   },
