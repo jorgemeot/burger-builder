@@ -37,9 +37,7 @@ class Modal extends React.Component {
     return (
       <Auxiliary>
         <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
-        <ModalContainer {...this.props}>
-          {this.props.children}
-        </ModalContainer>
+        <ModalContainer {...this.props}>{this.props.children}</ModalContainer>
       </Auxiliary>
     )
   }

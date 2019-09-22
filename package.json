@@ -13,7 +13,7 @@
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production && cp ./public/* ./dist/",
     "lint": "eslint ./**/*.js --config ./.eslintrc.js",
-    "format": "prettier ./**/*.js --write && eslint ./**/*.js --fix"
+    "format": "prettier ./**/*.js --write && yarn lint --fix"
   },
   "dependencies": {
     "axios": "^0.18.0",
