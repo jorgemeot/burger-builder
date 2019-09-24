@@ -1,5 +1,6 @@
 module.exports = {
   entry: './src/index.js',
+  devtool: 'source-map',
   devServer: { contentBase: './public' },
   module: {
     rules: [
